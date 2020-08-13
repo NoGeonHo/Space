@@ -1,0 +1,156 @@
+body {
+  background: black;
+}
+
+.main_space .main_login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.main_space > h1 {
+  color: gray;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 800px;
+  font-size: 120px;
+  opacity: 0;
+  animation: Hello 0.5s linear;
+  animation-duration: 4s;
+}
+
+@keyframes Hello {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.25;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  30% {
+    opacity: 0.8;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.check {
+  position: relative;
+  margin-top: -900px;
+  text-align: center;
+}
+
+.check > h1 {
+  color: gray;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 120px;
+  margin-top: 300px;
+}
+
+.check .yesBtn,
+.check .noBtn {
+  margin-top: 100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  outline: inherit;
+  border: none;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.check .yesBtn {
+  background: green;
+  margin-right: 150px;
+}
+
+.check .noBtn {
+  background: red;
+}
+
+.user {
+  opacity: 0;
+  animation: login_form 0.5s linear forwards;
+  animation-delay: 2s;
+  animation-duration: 4.5s;
+}
+
+.login_form.showing {
+  position: relative;
+  margin-top: -650px;
+  text-align: center;
+  opacity: 0;
+  animation: login_form 0.5s linear forwards;
+  animation-delay: 2s;
+  animation-duration: 4.5s;
+}
+
+.login_form.hidden {
+  display: none;
+}
+
+@keyframes login_form {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.main_space .main_login .login_form input {
+  border: none;
+  border-bottom: 5px solid gray;
+  background: black;
+  color: #2f3542;
+  outline: inherit;
+  width: 800px;
+  height: 100px;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 80px;
+}
+
+.main_space .main_login .login_form h3 {
+  color: #2ed573;
+  font-size: 100px;
+  text-align: center;
+}
+
+.img {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
